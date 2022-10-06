@@ -88,7 +88,8 @@ html:focus-within {
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
 }
 /* Set core body defaults */
 body {
@@ -256,7 +257,7 @@ p[data-width="wide"] {
 		background-color: transparent;
 		border: 0;
 		padding: .5em;
-		width: 1.5rem;
+		width: 1.75rem;
 		aspect-ratio: 1;
 		background-image: url("images/icon-hamburger.svg");
 		background-size: contain;
@@ -483,6 +484,28 @@ p[data-width="wide"] {
 @media (max-width: 47em) {
 	.background__shape {
 		order: -1;
+	}
+}
+
+.background__shape--middle {
+	position: relative;
+}
+.background__shape--middle::before {
+	content: url("images/bg-tablet-pattern.svg");
+	position: absolute;
+	z-index: -1;
+	zoom: 60%;
+	left: 50%;
+	bottom: 30%;
+	width: 85%;
+}
+
+@media (min-width: 47em) {
+	.background__shape--middle::before {
+		zoom: 90%;
+		left: -70%;
+		top: 40%;
+		width: 85%;
 	}
 }
 
