@@ -757,15 +757,3 @@ p[data-width="wide"] {
 .a11y-slider-dots li button.active {
 	background-color: var(--clr-accent-400);
 }
-
-/* .a11y-slider-next,
-.a11y-slider-prev {
-
-	background-color: var(--clr-neutral-100);
-	border: 1px solid var(--clr-accent-300);
-	border-radius: 100vw;
-
-	padding-inline: var(--size-300);
-	padding-block: var(--size-100);
-	color: var(--clr-accent-300);
-} */
